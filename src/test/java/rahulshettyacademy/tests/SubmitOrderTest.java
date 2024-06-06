@@ -39,7 +39,7 @@ public class SubmitOrderTest extends BaseTest{
 	public void submitOrder(HashMap<String,String> input) throws IOException, InterruptedException
 	{
 
-		// This is the begining 
+		// This is the begining of the program
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(input.get("product"));
